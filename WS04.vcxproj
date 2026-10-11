@@ -70,6 +70,16 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <LocalDebuggerWorkingDirectory>$(ProjectDir)</LocalDebuggerWorkingDirectory>
+    <LocalDebuggerCommandArguments>files/Stations1.txt files/Stations2.txt files/CustomerOrders.txt files/AssemblyLine.txt</LocalDebuggerCommandArguments>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -104,7 +114,6 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\OneDrive\Seneca Program\CPA\24Fall\OOP345\OOP345-Workshops\Workshops\WS04\files;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -133,7 +142,7 @@
     <ClCompile Include="src\Station.cpp" />
     <ClCompile Include="src\tester_3.cpp" />
     <ClCompile Include="src\Utilities.cpp" />
-    <ClCompile Include="src\WorkStation.cpp" />
+    <ClCompile Include="src\Workstation.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="files\AssemblyLine.txt" />
@@ -149,7 +158,7 @@
     <ClInclude Include="src\LineManager.h" />
     <ClInclude Include="src\Station.h" />
     <ClInclude Include="src\Utilities.h" />
-    <ClInclude Include="src\WorkStation.h" />
+    <ClInclude Include="src\Workstation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

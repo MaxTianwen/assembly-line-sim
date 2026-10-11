@@ -63,7 +63,7 @@ Link:    StationName|NextStationName
 
 The final station's link record contains only its own name. Keep station names consistent between inventory and connection files.
 
-For Visual Studio, open `WS04.sln` with the Desktop development with C++ workload and the v143 toolset (or retarget the project). The project selects `tester_3.cpp` as the entry point. In the startup project's Debugging settings, use `$(ProjectDir)` as the working directory and the four paths above as command arguments.
+For Visual Studio, open `WS04.sln` with the Desktop development with C++ workload and the v143 toolset (or retarget the project). The project selects `tester_3.cpp` as the entry point. The committed project sets the working directory to `$(ProjectDir)` and supplies the four sample arguments for every configuration. Set WS04 as the startup project and press Ctrl+F5.
 
 ## Validation
 
