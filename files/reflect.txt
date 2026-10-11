@@ -1,0 +1,12 @@
+-- Tester 1
+	1) Never forget to deal with the special scenarios.  For example, when extracting the data with a delimiter, make sure to handle the situation where only one character is also the delimiter itself.
+	2) Trim the whitespaces.  Even though there are no instructions about trimming whitespaces, it is necessary to do that after checking the source file.
+
+-- Tester 2
+	1) After going through the entire instructions, we deduced that the relation between CustomerOrder and Item is "Composition".  Therefore, it is necessary to manage the lifetime of each item in the "m_lstItem".
+	2) There should be a loop to read the tokens until EOF, extracting all the items.
+
+-- Tester 3
+	1) In order to find the first Workstation, we need to use a nested loop to look for the Workstation so that no pointers point to it.
+	2) Since the copy constructor and copy assignment operator are prohibited, it is necessary to use std::move() to convert objects to the right values when passing to functions.
+	
